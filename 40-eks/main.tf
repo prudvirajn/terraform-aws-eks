@@ -1,9 +1,9 @@
 resource "aws_key_pair" "eks" {
   key_name   = "eks"
   # you can paste the public key directly like this
-  #public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCk3f0HpsY29p/w34jzMUO+qkOngVfjPhDO2w4MBBU6z5fcam+W0t0qYd+fJbqsWs7jVMUWCTyGSqeQqjTlIHpJyTtRMyVJt0I9AM5JwnFxM7D+CPzDd6z2f7kL9ReY2UhfPR3rqsBOIcbVeXJYMCTwVbRZ8Z0st7DJpFwbAg435gT1bqBJgPtCC8kfTck0gt4CoaCS9n4ZCfogMVLMilNu4Enp7xLnp5d2fTg85c4kebn8kxhGs3nJhPQuW9P6SjPQt3yoFdfngF60iV2/WHwzLhJLhs+sdUz00WA9SG3qqjovLSBOtV7utEtgtCw4f3GbEgYru5g0G9KYjMA42xu1Fw90SKvqvGqjbkl+39/8mf1iNve98xiK9TD98yomrsb9aby8/7edUF++1LkEK7sZabZk//V4ctsSqlxR8owIhZNc6ufkjRF1dP5cJM5fMzPwvXNxjBW+oorGu3DwRtXMfSta34FjE5KPVlrBnYXbRn1wjtGwxs0o41jJDL19fqSXGxUFinP+iaJVxPt0txUZyhYLhpZqZkHOnK9Rg0W+QcNBPKgIS0GC2FSbj3lysoxngNKgCi1MXXcmGotf1j9G85WQMJLIfA72YhWzbCYLlUiFXsP+K4cA8kg25lqYHCWDfSoDsUaXJagF8OoeUHF7jr1hw/+0QbEouHo6lmvZUQ== ec2-user@ip-172-31-47-7.ec2.internal"
+  #public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC/NC0DhRIpdbLx6uTCMUnd1TjDwrzlzI6J5VOjyXcCU USER@DESKTOP-V21I53U"
 
-  public_key = file("/home/ec2-user/.ssh/eks.pub")
+  public_key = file("D:/devops/daws-81s/repos/Keys/eks.pub")
   # ~ means windows home directory
 }
 
